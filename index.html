@@ -22,7 +22,8 @@
                 </div>
                 
                 <div class="navbar-end">
-                  <a class="btn text-xl font-bold">Login <span>|</span></a>
+                  <a class="btn text-xl font-bold">Login</a>
+                  <div class="divider lg:divider-horizontal">|</div>
                   <a class="btn text-xl font-bold">Sign Up</a>
                 </div>
                 
@@ -60,12 +61,25 @@
               
             </div>
             <!-- book a flight and manage flight header section -->
-            <div class="card bg-white text-primary-content absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-16 w-5/6 ">
-              <div class="card-body">
-                <h2 class="card-title">Card title!</h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="card bg-white text-primary-content absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-32 w-5/6 ">
+              <div class="card-body ">
+                <div class="flex w-full flex-col lg:flex-row ">
+                  <div class="card bg-base-300 bg-gray-200 grid h-12 grow place-items-center">Book A Flight</div>
+                  <div class="divider lg:divider-horizontal">OR</div>
+                  <div class="card bg-base-300 bg-gray-200 rounded-box grid h-12 grow place-items-center">Manage Booking</div>
+                </div>
+                <div class="join grid grid-cols-2 ">
+                  <button class="join-item btn btn-outline">From</button>
+                  <div class="join grid grid-cols-4">
+                    <button class="join-item btn btn-outline">Trip Round Trip</button>
+                    <button class="join-item btn btn-outline">Depart 03/09/2024</button>
+                    <button class="join-item btn btn-outline">Return</button>
+                    <button class="join-item btn btn-outline">1 Adult, 0 Children, 0 Infant</button>
+                  </div>
+               </div>
+                          <p>+ Add Promo Code</p>
                 <div class="card-actions justify-end">
-                  <button class="btn">Buy Now</button>
+                  <button class="btn">Show Flight</button>
                 </div>
               </div>
             </div>
