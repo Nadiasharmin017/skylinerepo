@@ -10,6 +10,26 @@
     <title>Login</title>
 </head>
 <body>
+  <!-- navbar -->
+  <div>
+    <div class="navbar bg-base-600 shadow-sm text-orange-600">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+          </div>
+         
+        </div>
+        <a class="btn btn-ghost text-2xl">AIR<span class="text-yellow-600">ASTRA</span></a>
+      </div>
+      
+      <div class="navbar-end">
+       <button id="login-btn"><a href="login.html" class="btn text-xl font-bold btn btn-error text-white">Login</a></button>
+        <div class="divider lg:divider-horizontal">|</div>
+        <a class="btn text-xl font-bold btn btn-primary text-white">Sign Up</a>
+      </div>
+  </div>
+
     <!-- login -->
     <div class="hero bg-base-200 min-h-screen">
         <div class="hero-content flex-col lg:flex-row-reverse">
@@ -20,11 +40,11 @@
             <div class="card-body">
               <fieldset class="fieldset text-white text-xl">
                 <label class="label">Email</label>
-                <div class="border-2 rounded-sm ..."><input type="email" class="input" placeholder="Email" /></div>
+                <div class="border-2 rounded-sm ..."><input type="email" class="input text-2xl bg-sky-900" placeholder="Email" /></div>
                 <label class="label">Password</label>
-                <div class="border-2 rounded-sm ..."><input type="password" class="input" placeholder="Password" /></div>
+                <div class="border-2 rounded-sm ..."><input type="password" class="input text-2xl bg-sky-900" placeholder="Password" /></div>
                 <div><a class="link link-hover">Forgot password?</a></div>
-                <button class="btn btn-neutral mt-4 btn btn-error w-24 text-white text-xl">Login</button>
+                <button class="btn btn-neutral mt-4 btn btn-error w-full text-white text-xl text-bold">Login</button>
               </fieldset>
             </div>
           </div>
