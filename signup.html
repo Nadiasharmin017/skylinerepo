@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <title>signup</title>
+</head>
+<body>
+  <!-- navbar -->
+  <div>
+    <div class="navbar bg-base-600 shadow-sm text-orange-600">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+          </div>
+         
+        </div>
+        <a class="btn btn-ghost text-2xl">AIR<span class="text-yellow-600">ASTRA</span></a>
+      </div>
+      
+      <div class="navbar-end">
+       <button id="login-btn"><a href="login.html" class="btn text-xl font-bold btn btn-error text-white">Login</a></button>
+        <div class="divider lg:divider-horizontal">|</div>
+        <a class="btn text-xl font-bold btn btn-primary text-white">Sign Up</a>
+      </div>
+  </div>
+
+    <!-- login -->
+    <div class="hero bg-base-200 min-h-screen">
+          <div class="card bg-base-100 w-5/6 shrink-0 shadow-2xl border-4 h-96 bg-sky-900 h-full mt-20">
+            <h1 class="text-white text-center text-4xl">Create a new frequent flyer profile</h1>
+            <div class="card-body">
+              <fieldset class="fieldset text-white text-xl">
+                <label class="label">Login details</label>
+                <div class="border-b-2  rounded-sm ..."><input type="email" class="input text-2xl bg-sky-900" placeholder="Email Address" /></div>
+                <div class="flex justify-between">
+                <label class="label">Password*</label>
+                <div class="border-b-2 rounded-sm ..."><input type="password" class="input text-2xl bg-sky-900" placeholder="Password" /></div>
+                <label class="label pl-10">Confirm password *</label>
+                <div class="border-b-2 rounded-sm ..."><input type="password" class="input text-2xl bg-sky-900" placeholder="Password" /></div>
+                </div>
+                <!--Personal information  -->
+                <fieldset class="fieldset text-white text-xl">
+                    <label class="label">Personal information</label>
+                    <div class="border-b-2 rounded-sm ..."><input type="email" class="input text-2xl bg-sky-900" placeholder="Email Address" /></div>
+                    <h1>Title</h1>
+                    <div class="flex justify-between">
+                    <label class="label">First name*</label>
+                    <div class="border-b-2 rounded-sm ..."><input type="password" class="input text-2xl bg-sky-900" placeholder="First name" /></div>
+                    <label class="label pl-10">Last name *</label>
+                    <div class="border-b-2 rounded-sm ..."><input type="password" class="input text-2xl bg-sky-900" placeholder="Last name" /></div>
+                    </div>
+                    <!--  -->
+
+                    <label class="label">Birth date</label>
+                    <div class="border-b-2 rounded-sm ..."><input type="email" class="input text-2xl bg-sky-900" placeholder="Email Address" /></div>
+                    <h1>Title</h1>
+                    <div class="flex justify-between">
+                    <label class="label">Address*</label>
+                    <div class="border-b-2 rounded-sm ..."><input type="password" class="input text-2xl bg-sky-900" placeholder="Address" /></div>
+                    <label class="label pl-10">Post code *</label>
+                    <div class="border-b-2 rounded-sm ..."><input type="password" class="input text-2xl bg-sky-900" placeholder="Post code" /></div>
+                    </div>
+                    <!--  -->
+                    <label class="label">Documents</label>
+                    <div class="border-b-2 rounded-sm ..."><input type="email" class="input text-2xl bg-sky-900" placeholder="Email Address" /></div>
+                    <h1>Document Type</h1>
+                    <div class="flex justify-between">
+                    <label class="label">Passport*</label>
+                    <div class="border-b-2 rounded-sm ..."><input type="password" class="input text-2xl bg-sky-900" /></div>
+                    <label class="label pl-10">Document ID *</label>
+                    <div class="border-b-2 rounded-sm ..."><input type="password" class="input text-2xl bg-sky-900" /></div>
+                    </div>
+               
+                <button class="btn btn-neutral mt-20 btn btn-error w-4/5 ml-24 text-center justify-center align-center text-white text-xl text-bold">Sign Up</button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+    <script src="js/signup.js"></script>
+</body>
+</html>
