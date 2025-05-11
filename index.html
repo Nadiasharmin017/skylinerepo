@@ -5,7 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>SKYLINE</title>
+     <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <!-- Demo styles -->
+   <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+  </style>
+    
 </head>
 <body >
     <section>
@@ -113,45 +150,136 @@
               </div>
           </div>
           <!-- flight carasol -->
-           
-          <div class="overflow-x-auto justify-center align-center text-center mt-12">
-            
-          <div class="avatar transition-transform hover:scale-125 duration-300">
-            
-            <div class="w-64 rounded ">
-              <img src="image/image2.jpg" />
-            </div>
-          </div>
-          <div class="avatar transition-transform hover:scale-125 duration-300">
-            <div class="w-48 rounded">
-              <img
-                src="image/image3.jpg"
-                alt="Tailwind-CSS-Avatar-component"
-              />
-            </div>
-          </div>
-          <div class="avatar transition-transform hover:scale-125 duration-300">
-            <div class="w-40 rounded">
-              <img
-                src="image/image4.jpeg"
-                alt="Tailwind-CSS-Avatar-component"
-              />
-            </div>
-          </div>
-          <div class="avatar transition-transform hover:scale-125 duration-300">
-            <div class="w-32 rounded">
-              <img
-                src="image/image5.jpeg"
-                alt="Tailwind-CSS-Avatar-component"
-              />
-            </div>
-          </div>
-        </div>
-        </div>
-      </section>
-        
+           <!-- Swiper -->
+ 
+<div class="swiper mySwiper carousel">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide carousel-item">
+      <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+    </div>
+    <div class="swiper-slide carousel-item">
+      <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+    </div>
+    <div class="swiper-slide carousel-item">
+      <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+    </div>
+    <div class="swiper-slide carousel-item">
+      <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+    </div>
+    <div class="swiper-slide carousel-item">
+      <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+    </div>
+    <div class="swiper-slide carousel-item">
+      <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+    </div>
+    <div class="swiper-slide carousel-item">
+      <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+    </div>
+    <div class="swiper-slide carousel-item">
+      <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+    </div>
+    <div class="swiper-slide carousel-item">
+      <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+    </div>
+  </div>
+</div>
 
+<div class="flex w-full justify-center gap-2 py-2">
+  <button class="btn btn-xs" onclick="swiper.slideTo(0)">1</button>
+  <button class="btn btn-xs" onclick="swiper.slideTo(1)">2</button>
+  <button class="btn btn-xs" onclick="swiper.slideTo(2)">3</button>
+  <button class="btn btn-xs" onclick="swiper.slideTo(3)">4</button>
+  <button class="btn btn-xs" onclick="swiper.slideTo(4)">5</button>
+  <button class="btn btn-xs" onclick="swiper.slideTo(5)">6</button>
+  <button class="btn btn-xs" onclick="swiper.slideTo(6)">7</button>
+  <button class="btn btn-xs" onclick="swiper.slideTo(7)">8</button>
+  <button class="btn btn-xs" onclick="swiper.slideTo(8)">9</button>
+</div>
+
+ 
+ <!-- 3rd section -->
+ <div class="text-center mt-12 ">
+ <div class="stats shadow text-center bg-yellow-300 text-white">
+  <div class="stat">
+    <div class="stat-figure text-white">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        class="inline-block h-8 w-8 stroke-current"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+        ></path>
+      </svg>
+    </div>
+    <div class="stat-title text-primary">Get ready for the travel <br> experience like never before.</div>
+    <!-- <div class="stat-value text-primary">25.6K</div> -->
+    <!-- <div class="stat-desc">21% more than last month</div> -->
+  </div>
+
+  <div class="stat text-center">
+    <div class="stat-figure text-secondary">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        class="inline-block h-8 w-8 stroke-current"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 10V3L4 14h7v7l9-11h-7z"
+        ></path>
+      </svg>
+    </div>
+    <div class="stat-title">Page Views</div>
+    <div class="stat-value text-secondary">2.6M</div>
+    <div class="stat-desc">21% more than last month</div>
+  </div>
+
+  <div class="stat">
+    <div class="stat-figure text-secondary">
+      <div class="avatar online">
+        <div class="w-16 rounded-full">
+          <img src="https://img.daisyui.com/images/profile/demo/anakeen@192.webp" />
+        </div>
+      </div>
+    </div>
+    <div class="stat-value">86%</div>
+    <div class="stat-title">Tasks done</div>
+    <div class="stat-desc text-secondary">31 tasks remaining</div>
+  </div>
+</div>
+</div>
 <script src="js/login.js"></script>
 <script src="js/signup.js"></script>
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- Initialize Swiper -->
+   <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+
+      
+    });
+  </script>
 </body>
 </html>
